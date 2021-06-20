@@ -58,13 +58,22 @@ Response
 {
   "data": [
     {
-      "accountNumber": "585309209",
-      "customerId": "234234322",
-      "accountName": "AuSavings123",
+      "accountNumber": 1234563445,
+      "customerNumber": 150034523,
+      "accountName": "Savings123US",
       "accountType": "Savings",
-      "balanceDate": "08/11/2020",
-      "currency": "AUD",
-      "openingAvailableBalance": "84327.52"
+      "currency": "USD",
+      "balanceDate": "21/06/2021",
+      "openingBalance": 12335.67
+    },
+    {
+      "accountNumber": 1234597922,
+      "customerNumber": 150034523,
+      "accountName": "Savings566GB",
+      "accountType": "Savings",
+      "currency": "GBP",
+      "balanceDate": "21/06/2021",
+      "openingBalance": 344.33
     }
   ]
 }
