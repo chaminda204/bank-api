@@ -116,6 +116,32 @@ Response
 }
 ````
 
+#### Validation errors
+
+- Customer number should be 9 digit numeric, if not validation error will be thrown
+- Account number should be 10 digit numeric, if not validation error will be thrown
+
+````
+curl http://localhost:8080/customers/15003452/accounts/123456344/transactions 
+````
+
+Response
+
+````json
+{
+  "errors": [
+    {
+      "errorCode": "BAD_REQUEST",
+      "description": "Invalid accountNumber"
+    },
+    {
+      "errorCode": "BAD_REQUEST",
+      "description": "Invalid customerNumber"
+    }
+  ]
+}
+````
+
 ### Product Backlog
 
 ````
