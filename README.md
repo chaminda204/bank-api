@@ -30,10 +30,6 @@ go to the project base dir and run the following command
 docker-compose up
 ````
 
-docker build . --tag application
-
-docker run -it -p8080:8080 application:latest
-
 ## Notes / Assumptions
 
 - This application supports read only operations and data creation is out of scope

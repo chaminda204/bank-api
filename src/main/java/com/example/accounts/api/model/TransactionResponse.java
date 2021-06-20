@@ -2,7 +2,6 @@ package com.example.accounts.api.model;
 
 import com.example.accounts.api.LocalDateSerializer;
 import com.fasterxml.jackson.annotation.JsonInclude;
-import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 import lombok.Getter;
 import lombok.Setter;

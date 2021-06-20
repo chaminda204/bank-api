@@ -1,19 +1,20 @@
 package com.example.functional
 
+import com.example.accounts.Application
 import io.restassured.RestAssured
 import io.restassured.http.ContentType
-import org.junit.Before
 import org.junit.runner.RunWith
+import org.springframework.boot.SpringBootConfiguration
 import org.springframework.boot.test.context.SpringBootTest
 import org.springframework.boot.web.server.LocalServerPort
-import org.springframework.context.annotation.Profile
 import org.springframework.test.context.ActiveProfiles
 import org.springframework.test.context.junit4.SpringRunner
 import spock.lang.Specification
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = Application.class)
 @ActiveProfiles("test")
+
 abstract class BaseIntegrationSpec extends Specification {
 
     @LocalServerPort
